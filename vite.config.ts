@@ -1,4 +1,4 @@
-import path from "node:path"
+import path from "node:path";
 import tailwindcss from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vite";
@@ -15,13 +15,13 @@ export default defineConfig(async () => ({
 		}),
 		solid(),
 	],
-	
+
 	resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-  
+		alias: {
+			"@": path.resolve(__dirname, "./src"),
+		},
+	},
+
 	server: {
 		port: 5173,
 		strictPort: true,
@@ -31,7 +31,7 @@ export default defineConfig(async () => ({
 					protocol: "ws",
 					host,
 					port: 1421,
-				}
+			  }
 			: undefined,
 		watch: {
 			ignored: ["**/src-tauri/**"],

@@ -1,0 +1,24 @@
+{
+  "name": "tauri-solid-templete",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tanstack/solid-router": "^1.157.18",
+    "@tauri-apps/api": "^2.9.1",
+    "@tauri-apps/plugin-os": "~2",
+    "lucide-solid": "^0.563.0",
+    "solid-js": "^1.9.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@tanstack/router-plugin": "^1.157.18",
+    "@tauri-apps/cli": "^2.9.6",
+    "@types/node": "^25.2.0",
+    "vite": "^7.3.1",
+    "vite-plugin-solid": "^2.11.10"
+  }
+}

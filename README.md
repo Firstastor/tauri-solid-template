@@ -1,37 +1,25 @@
 # Tauri + Solid Template
 
+![Preview 1](docs/images/preview-1.png)
+![Preview 2](docs/images/preview-2.png)
+
 Biome + Bun + Rust + Solid + Tanstack + Tauri + Tailwind + TS + Vite
 
 ## Introduction
 
 We aim to use the least tools to achieve a modern fast application.
 
-### Biome
-Biome is a modern linter and formatter for JS, JSON, TS
-
-### Bun
-Bun is a modern package manager and TS runtime.
-
-### Rust
-Rust is a zero-cost abstractions and memory-safe programming language.
-
-### Solid
-Solid is a fine-grained reactivity and declarative TypeScript-First library.
-
-### Tanstack
-Tanstack is a set of libraries for building powerful web applications.
-
-### Tauri
-Tauri is a framework for building memory-save and lightweight binaries.
-
-### Tailwind
-Tailwind is an atomic utility-first CSS framework.
-
-### TypeScript
-TypeScript is a statically typed superset of JavaScript.
-
-### Vite
-Vite is a modern frontend dev and build tool.
+| Tool | Description |
+| :--- | :--- |
+| **Biome** | Modern linter and formatter for JS, JSON, TS. |
+| **Bun** | Modern package manager and TS runtime. |
+| **Rust** | Zero-cost abstractions and memory-safe programming language. |
+| **Solid** | Fine-grained reactivity and declarative TypeScript-First library. |
+| **Tanstack** | Powerful routing and state management libraries. |
+| **Tauri** | Framework for building memory-safe and lightweight binaries. |
+| **Tailwind** | Atomic utility-first CSS framework. |
+| **TypeScript** | Statically typed superset of JavaScript. |
+| **Vite** | Modern frontend dev and build tool. |
 
 ## Installation
 
@@ -47,6 +35,7 @@ Vite is a modern frontend dev and build tool.
    bun tauri dev
    ```
 Minimalist but Max-Fast!
+
 ## Template Structure
 - `src/` - Solid (TypeScript) source code.
 - `src-tauri/` - Tauri (Rust) source code.
@@ -73,9 +62,10 @@ function About() {
 ### UI/UX
 `App.css` - Global styles using Tailwind CSS, designed for shadcn/ui compatibility.
 
-`src/components/layouts/TitleBar.tsx` - Title bar component also setting Acrylic effect for Windows.
+`src/components/layouts/Titlebar.tsx` - Titlebar component also setting window effects for Windows or macOS.
+
+`src/components/layouts/Sidebar.tsx` - Collapsible sidebar component with modern hover-expand animations and system-aware styling.
+
 > #### Pay attention  
-> if you want to use Acrylic effect, you must ensure the background color has a degree of opacity.  
+> If you want to use window Effects (like Acrylic), you must ensure the background color has a degree of opacity.  
 > e.g., use `bg-background/30` instead of `bg-background`.
-
-

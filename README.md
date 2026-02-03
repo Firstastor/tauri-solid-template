@@ -1,9 +1,10 @@
 # Tauri + Solid Template
 
-![Preview 1](docs/images/preview-1.png)
-![Preview 2](docs/images/preview-2.png)
-
 Biome + Bun + Lucide + Rust + Solid + Tanstack + Tauri + Tailwind + TS + Vite
+
+## Preview
+
+![Preview 1](docs/images/preview-1.png)
 
 ## Introduction
 
@@ -56,17 +57,14 @@ export const Route = createFileRoute("/about")({
 });
 
 function About() {
-	return <div></div>;
+	return <div>About</div>;
 }
 ```
 
 ### UI/UX
 
-#### Styling & Animations
-`App.css` - Global styles using Tailwind CSS v4, designed for modern desktop aesthetics.
-
-*   **Tailwind CSS**: Utilizing advanced features like `@custom-variant dark (&:is(.dark *))`. This allows you to write `dark:bg-primary` and have it correctly trigger when the `.dark` class is applied to the `html` element by the system theme listener.
-*   **tw-animate-css**: Integrated for high-performance, declarative animations. Simply use classes like `animate-fade-in` or `animate-fade-in-left` to bring your UI to life with minimal effort.
+#### Styling
+`App.css` - Global styles using **Tailwind CSS** 4 and **Animation** plugin, designed for **shadcn/ui** compatibility.
 
 #### Layout Components
 *   `src/components/layouts/Titlebar.tsx`: A custom titlebar that handles window controls and applies native effects (like Acrylic on Windows or Vibrancy on macOS).

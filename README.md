@@ -3,7 +3,7 @@
 ![Preview 1](docs/images/preview-1.png)
 ![Preview 2](docs/images/preview-2.png)
 
-Biome + Bun + Rust + Solid + Tanstack + Tauri + Tailwind + TS + Vite
+Biome + Bun + Lucide + Rust + Solid + Tanstack + Tauri + Tailwind + TS + Vite
 
 ## Introduction
 
@@ -13,6 +13,7 @@ We aim to use the least tools to achieve a modern fast application.
 | :--- | :--- |
 | **Biome** | Modern linter and formatter for JS, JSON, TS. |
 | **Bun** | Modern package manager and TS runtime. |
+| **Lucide** | Beautiful & consistent icon toolkit. |
 | **Rust** | Zero-cost abstractions and memory-safe programming language. |
 | **Solid** | Fine-grained reactivity and declarative TypeScript-First library. |
 | **Tanstack** | Powerful routing and state management libraries. |
@@ -60,12 +61,17 @@ function About() {
 ```
 
 ### UI/UX
-`App.css` - Global styles using Tailwind CSS, designed for shadcn/ui compatibility.
 
-`src/components/layouts/Titlebar.tsx` - Titlebar component also setting window effects for Windows or macOS.
+#### Styling & Animations
+`App.css` - Global styles using Tailwind CSS v4, designed for modern desktop aesthetics.
 
-`src/components/layouts/Sidebar.tsx` - Collapsible sidebar component with modern hover-expand animations and system-aware styling.
+*   **Tailwind CSS**: Utilizing advanced features like `@custom-variant dark (&:is(.dark *))`. This allows you to write `dark:bg-primary` and have it correctly trigger when the `.dark` class is applied to the `html` element by the system theme listener.
+*   **tw-animate-css**: Integrated for high-performance, declarative animations. Simply use classes like `animate-fade-in` or `animate-fade-in-left` to bring your UI to life with minimal effort.
+
+#### Layout Components
+*   `src/components/layouts/Titlebar.tsx`: A custom titlebar that handles window controls and applies native effects (like Acrylic on Windows or Vibrancy on macOS).
+*   `src/components/layouts/Sidebar.tsx`: A modern, collapsible sidebar that saves space by default and expands on hover, featuring smooth transitions and active route highlighting.
 
 > #### Pay attention  
 > If you want to use window Effects (like Acrylic), you must ensure the background color has a degree of opacity.  
-> e.g., use `bg-background/30` instead of `bg-background`.
+> e.g., use `bg-background/30` instead of `bg-background` in your component classes.

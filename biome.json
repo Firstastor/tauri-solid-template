@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.3.13/schema.json",
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"assist": {
 		"enabled": true,
 		"actions": {
@@ -9,6 +9,9 @@
 		}
 	},
 	"css": {
+		"formatter": {
+			"enabled": true
+		},
 		"parser": {
 			"tailwindDirectives": true
 		}
@@ -17,18 +20,42 @@
 		"ignoreUnknown": true
 	},
 	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab"
+		"formatWithErrors": true
 	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
+	"graphql": {
+		"formatter": {
+			"enabled": true
 		}
 	},
-	"javascript": {
+	"html": {
 		"formatter": {
-			"quoteStyle": "double"
+			"enabled": true
+		},
+		"parser": {
+			"interpolation": true
+		}
+	},
+	"json": {
+		"formatter": {
+			"enabled": true
+		}
+	},
+	"linter": {
+		"rules": {
+			"recommended": true,
+			"nursery": {
+				"useSortedClasses": {
+					"fix": "safe",
+					"level": "warn",
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw", "tw.*"]
+					}
+				}
+			},
+			"style": {
+				"useTemplate": "off"
+			}
 		}
 	},
 	"vcs": {

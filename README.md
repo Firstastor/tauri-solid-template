@@ -1,6 +1,6 @@
-# Tauri + Solid Template
+# Tauri + SolidJS Template
 
-Biome + Bun + Lucide + Rust + Solid + Tanstack + Tauri + Tailwind + TS + Vite
+Biome + Bun + Lucide + Rust + SolidJS + Tanstack + Tauri + Tailwind + TS + Vite
 
 ## Preview
 
@@ -8,20 +8,20 @@ Biome + Bun + Lucide + Rust + Solid + Tanstack + Tauri + Tailwind + TS + Vite
 
 ## Introduction
 
-We aim to use the least tools to achieve a modern fast application.
+We aim to use the least tech stacks to achieve a modern fast application.
 
-| Tool | Description |
+| Tech Stack | Description |
 | :--- | :--- |
-| **Biome** | Modern linter and formatter for JS, JSON, TS. |
-| **Bun** | Modern package manager and TS runtime. |
-| **Lucide** | Beautiful & consistent icon toolkit. |
-| **Rust** | Zero-cost abstractions and memory-safe programming language. |
-| **Solid** | Fine-grained reactivity and declarative TypeScript-First library. |
-| **Tanstack** | Powerful routing and state management libraries. |
-| **Tauri** | Framework for building memory-safe and lightweight binaries. |
-| **Tailwind** | Atomic utility-first CSS framework. |
-| **TypeScript** | Statically typed superset of JavaScript. |
-| **Vite** | Modern frontend dev and build tool. |
+| **Biome** | Modern Linter and Formatter for JS, JSON, and TS |
+| **Bun** | Modern Package Manager and TypeScript Runtime |
+| **Lucide** | Beautiful and Consistent Icon Toolkit |
+| **Rust** | Zero-Cost Abstractions and Memory-Safe Programming Language |
+| **SolidJS** | Fine-Grained Reactivity and Declarative TypeScript-First Library |
+| **Tanstack** | High-Performance, Type-Safe, Headless Logic Engine. |
+| **Tauri** | Lightweight Cross-Platform Framework via Native Webview |
+| **Tailwind** | Atomic Utility-First CSS Framework |
+| **TypeScript** | Statically Typed Superset of JavaScript |
+| **Vite** | Modern Frontend Development and Build Tool |
 
 ## Installation
 
@@ -39,7 +39,7 @@ We aim to use the least tools to achieve a modern fast application.
 Minimalist but Max-Fast!
 
 ## Template Structure
-- `src/` - Solid (TypeScript) source code.
+- `src/` - SolidJS (TypeScript) source code.
 - `src-tauri/` - Tauri (Rust) source code.
 
 ### Tanstack Route
@@ -67,7 +67,7 @@ function About() {
 `App.css` - Global styles using **Tailwind CSS** 4 and **Animation** plugin, designed for **shadcn/ui** compatibility.
 
 #### Layout Components
-*   `src/components/layouts/Titlebar.tsx`: A custom titlebar that handles window controls and applies native effects (like Acrylic on Windows or Vibrancy on macOS).
+*   `src/components/layouts/Titlebar.tsx`: A custom titlebar that handles window controls and applies native effects (like Acrylic on Windows).
 *   `src/components/layouts/Sidebar.tsx`: A modern, collapsible sidebar that saves space by default and expands on hover, featuring smooth transitions and active route highlighting.
 
 > #### Pay attention  

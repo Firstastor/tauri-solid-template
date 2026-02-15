@@ -1,78 +1,36 @@
 {
+	"code_actions_on_format": {
+		"source.action.useSortedKeys.biome": true,
+		"source.action.useSortedProperties.biome": true,
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true
+	},
 	"languages": {
-		"CSS": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"GritQL": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"HTML": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"JavaScript": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			},
-			"code_actions_on_format": {
-				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true
-			}
-		},
-		"JSON": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"JSONC": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"TSX": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			},
-			"code_actions_on_format": {
-				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true
-			}
-		},
-		"TypeScript": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			},
-			"code_actions_on_format": {
-				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true
-			}
-		}
+		"CSS": { "formatter": { "language_server": { "name": "biome" } } },
+		"JavaScript": { "formatter": { "language_server": { "name": "biome" } } },
+		"JSON": { "formatter": { "language_server": { "name": "biome" } } },
+		"JSONC": { "formatter": { "language_server": { "name": "biome" } } },
+		"TSX": { "formatter": { "language_server": { "name": "biome" } } },
+		"TypeScript": { "formatter": { "language_server": { "name": "biome" } } }
 	},
 	"lsp": {
-		"biome": {
+		"tailwindcss-language-server": {
 			"settings": {
-				"require_config_file": true
+				"classFunctions": ["cva", "cx"],
+				"experimental": {
+					"classRegex": [
+						"[cls|className]\\s\\:\\=\\s\"([^\"]*)",
+						"\\.className\\s*[+]?=\\s*['\"]([^'\"]*)['\"]",
+						"\\.setAttributeNS\\(.*,\\s*['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+						"\\.setAttribute\\(['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+						"\\.classList\\.add\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.remove\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
+						"\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
+					]
+				}
 			}
 		}
 	}

@@ -1,10 +1,10 @@
 {
-	"biome.requireConfiguration": true,
 	"editor.codeActionsOnSave": {
+		"source.action.useSortedKeys.biome": "explicit",
+		"source.action.useSortedProperties.biome": "explicit",
 		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
-	"editor.formatOnType": true,
 	"editor.quickSuggestions": {
 		"strings": "on"
 	},

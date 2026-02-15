@@ -1,18 +1,24 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"assist": {
-		"enabled": true,
 		"actions": {
 			"source": {
-				"organizeImports": "on"
+				"organizeImports": "on",
+				"useSortedKeys": {
+					"level": "on",
+					"options": { "sortOrder": "natural" }
+				},
+				"useSortedProperties": "on"
 			}
-		}
+		},
+		"enabled": true
 	},
 	"css": {
 		"formatter": {
 			"enabled": true
 		},
 		"parser": {
+			"cssModules": true,
 			"tailwindDirectives": true
 		}
 	},
@@ -42,7 +48,6 @@
 	},
 	"linter": {
 		"rules": {
-			"recommended": true,
 			"nursery": {
 				"useSortedClasses": {
 					"fix": "safe",
@@ -53,14 +58,15 @@
 					}
 				}
 			},
+			"recommended": true,
 			"style": {
 				"useTemplate": "off"
 			}
 		}
 	},
 	"vcs": {
-		"enabled": true,
 		"clientKind": "git",
+		"enabled": true,
 		"useIgnoreFile": true
 	}
 }

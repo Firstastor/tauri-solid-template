@@ -57,7 +57,7 @@ export const Route = createFileRoute("/about")({
 });
 
 function About() {
-	return <div>About</div>;
+	return <div>About</div>
 }
 ```
 

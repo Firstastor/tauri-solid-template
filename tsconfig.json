@@ -21,13 +21,13 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"paths": {
-			"~/*": ["./src/*"]
+			"@/*": ["./src/*"]
 		},
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "ESNext",
-		"types": ["vite/client"],
+		"types": ["vite/client", "node"],
 		"useDefineForClassFields": true,
 		"verbatimModuleSyntax": true
 	},

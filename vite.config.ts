@@ -24,11 +24,9 @@ export default defineConfig({
 		solidPlugin(),
 	],
 
-	resolve: {
-		alias: {
-			"@": import.meta.dirname + "/src",
-		},
-	},
+ resolve: {
+    tsconfigPaths: true,
+  },
 
 	server: {
 		hmr: host
